@@ -1,0 +1,153 @@
+$primary: #a98794;
+$secondary: #59729c;
+$accent: rgb(195, 174, 124);
+$light: #fff;
+$dark: #000;
+
+$menu-hover-lines-transition: all 0.35s ease;
+$menu-hover-lines-border-width: 3px;
+/* General */
+h1 {
+  color: $light;
+}
+
+/* Medium menu */
+.transparent {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+.medium-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  background-color: $light;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 0 0.75rem;
+
+  .logo {
+    height: 5rem;
+  }
+  .menu-hover-lines {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: $menu-hover-lines-transition;
+
+    li a {
+      padding: 0.75rem 0;
+      color: rgba($dark, 0.5);
+      position: relative;
+      margin-left: 1rem;
+    }
+
+    li:first-child a {
+      margin-left: 0;
+    }
+
+    li.active > a {
+      background-color: transparent;
+    }
+
+    a:before,
+    a::after {
+      height: $menu-hover-lines-border-width;
+      position: absolute;
+      content: "";
+      transition: $menu-hover-lines-transition;
+      background-color: $primary;
+      width: 0;
+    }
+
+    a::before {
+      top: 0;
+      left: 0;
+    }
+
+    a::after {
+      bottom: 0;
+      right: 0;
+    }
+
+    a:hover,
+    li.active > a {
+      color: $dark;
+      transition: $menu-hover-lines-transition;
+    }
+
+    a:hover::before,
+    .active a::before,
+    a:hover::after,
+    .active a::after {
+      width: 100%;
+    }
+  }
+}
+
+/* Small menu */
+.small-menu {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: $light;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+  a {
+    padding: 0.75rem 0;
+    color: rgba($dark, 0.5);
+    position: relative;
+    margin-left: 1rem;
+    img {
+      max-height: 2rem;
+    }
+  }
+  a:hover,
+  li.active > a {
+    color: $dark;
+  }
+}
+
+/* Header */
+.image_header {
+  height: 40rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 5rem;
+}
+.title {
+  text-align: center;
+  .theme {
+    text-transform: uppercase;
+  }
+}
+
+/* Responsive */
+
+@media screen and (max-width: 39.9375em) {
+  .medium-menu {
+    display: none;
+  }
+  .small-menu {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 40em) {
+  .medium-menu {
+    display: flex;
+  }
+  .small-menu {
+    display: none;
+  }
+}

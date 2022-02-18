@@ -1,6 +1,175 @@
 <?php /* Template Name: Home*/ ?>
 <?php get_header(); ?>
 
-Home
-
+<p>
+    contenu
+</p>
+<p>
+    contenu
+</p>
+<p>
+    contenu
+</p>
+<p>
+    contenu
+</p>
+<p>
+    contenu
+</p>
+<p>
+    contenu
+</p>
+<p>
+    contenu
+</p>
+<p>
+    contenu
+</p>
+<p>
+    contenu
+</p>
+<p>
+    contenu
+</p>
+<p>
+    contenu
+</p>
+<p>
+    contenu
+</p>
+<p>
+    contenu
+</p>
+<p>
+    contenu
+</p>
+<p>
+    contenu
+</p>
+<p>
+    contenu
+</p>
+<p>
+    contenu
+</p>
+<p>
+    contenu
+</p>
+<p>
+    contenu
+</p>
+<p>
+    contenu
+</p>
+<p>
+    contenu
+</p>
+<p>
+    contenu
+</p>
+<p>
+    contenu
+</p>
+<p>
+    contenu
+</p>
+<p>
+    contenu
+</p>
+<p>
+    contenu
+</p>
+<p>
+    contenu
+</p>
+<p>
+    contenu
+</p>
+<p>
+    contenu
+</p>
+<p>
+    contenu
+</p>
+<p>
+    contenu
+</p>
+<p>
+    contenu
+</p>
+<p>
+    contenu
+</p>
+<p>
+    contenu
+</p>
+<p>
+    contenu
+</p>
+<p>
+    contenu
+</p>
+<p>
+    contenu
+</p>
+<p>
+    contenu
+</p>
+<p>
+    contenu
+</p>
+<p>
+    contenu
+</p>
+<p>
+    contenu
+</p>
+<p>
+    contenu
+</p>
+<p>
+    contenu
+</p>
+<p>
+    contenu
+</p>
+<p>
+    contenu
+</p>
+<p>
+    contenu
+</p>
+<p>
+    contenu
+</p>
+<p>
+    contenu
+</p>
+<p>
+    contenu
+</p>
+<p>
+    contenu
+</p>
+<p>
+    contenu
+</p>
+<p>
+    contenu
+</p>
+<p>
+    contenu
+</p>
+<p>
+    contenu
+</p>
+<p>
+    contenu
+</p>
+<p>
+    contenu
+</p>
+<p>
+    contenu
+</p>
 <?php get_footer(); ?>
