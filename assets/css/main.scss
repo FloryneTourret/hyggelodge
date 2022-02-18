@@ -141,6 +141,11 @@ h1 {
   .small-menu {
     display: flex;
   }
+  .image_header {
+    height: calc(100vh - 3.5rem);
+    align-items: center;
+    margin: 0;
+  }
 }
 
 @media screen and (min-width: 40em) {
