@@ -34,7 +34,7 @@ if (!empty($image)) : ?>
             <?php the_field('content'); ?>
         </div>
         <div class="cell medium-auto small-12">
-            <p>Ajouter une image</p>
+            <p>Image à mettre ici</p>
         </div>
     </div>
 </div>

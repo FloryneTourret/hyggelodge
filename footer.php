@@ -1,5 +1,5 @@
 <div class="small-menu">
-    <a href="#"><img src="http://hyggelodge.org/wp-content/uploads/2022/02/Hygge-lodge-logo-sans-baseline.png" alt="logo" class="logo"></a>
+    <a href="#"><img src="http://hyggelodge.org/wp-content/uploads/2022/02/Hygge-lodge-logo-sans-baseline.png" alt="logo" class="logo-mobile"></a>
     <a>Réserver</a>
     <a>Nos prestations</a>
 </div>
