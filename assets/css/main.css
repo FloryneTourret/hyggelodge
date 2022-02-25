@@ -146,7 +146,7 @@ h1 {
 }
 
 .small-menu a img {
-  max-height: 2rem;
+  max-height: 3rem;
 }
 
 .small-menu a:hover,
@@ -234,6 +234,9 @@ h1 {
   .title {
     margin-top: 15rem;
     font-size: 2rem;
+  }
+  .gallery_title {
+    font-size: 1rem;
   }
 }
 
