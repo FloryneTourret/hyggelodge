@@ -3,11 +3,31 @@ $logo = get_theme_mod('hyggelodge_logo');
 $logo_white = get_theme_mod('hyggelodge_logo_white');
 ?>
 
-<div>
-    Footer à faire
-    liens
-    contact
+<div class="footer grid-x grid-margin-x grid-margin-y">
+    <div class="cell medium-4 small-12">
+        <p>Liens pages</p>
+    </div>
 
+    <div class="cell medium-4 small-12">
+        <p>
+            458, route de la Gare
+            <br>
+            74210 Doussard
+            <br>
+            Lac d'Annecy
+            <br>
+            France
+        </p>
+        <p>
+            Tél: +33 6 70 16 55 15
+            <br>
+            hyggelodge@outlook.com
+        </p>
+    </div>
+
+    <div class="cell medium-4 small-12">
+        <p>©</p>
+    </div>
 </div>
 
 <div class="small-menu">

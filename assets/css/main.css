@@ -181,6 +181,17 @@ p {
   letter-spacing: 0.1rem;
 }
 
+/* Footer */
+.footer {
+  margin-top: 3rem;
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.footer p {
+  color: #c3ae7c;
+}
+
 /* Gallerie */
 .gallery_subject {
   margin-top: 5rem;
