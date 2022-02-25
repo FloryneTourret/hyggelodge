@@ -175,9 +175,9 @@ h1 {
 .gallery_card {
   .gallery_image {
     border-radius: 0.6rem;
+    transition: $menu-hover-lines-transition;
     &:hover {
       transform: scale(1.1);
-      transition: $menu-hover-lines-transition;
     }
   }
   .gallery_title {

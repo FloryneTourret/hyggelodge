@@ -24,9 +24,15 @@
 
 <body>
 
+    <?php
+    $logo = get_theme_mod('hyggelodge_logo');
+    $logo_white = get_theme_mod('hyggelodge_logo_white');
+    ?>
     <div class="medium-menu transparent top-bar">
         <div class="top-bar-left">
-            <a href="#"><img src="http://hyggelodge.org/wp-content/uploads/2022/02/Hygge-lodge-logo-blanc.png" alt="logo" class="logo"></a>
+            <a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
+                <img class="logo" src="<?php echo $logo_white; ?>" alt="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>">
+            </a>
         </div>
         <div class="top-bar-right ">
             <ul class="menu menu-hover-lines transparent">

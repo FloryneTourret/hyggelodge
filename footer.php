@@ -1,5 +1,10 @@
+<?php
+$logo = get_theme_mod('hyggelodge_logo');
+$logo_white = get_theme_mod('hyggelodge_logo_white');
+?>
+
 <div class="small-menu">
-    <a href="#"><img src="http://hyggelodge.org/wp-content/uploads/2022/02/Hygge-lodge-logo-sans-baseline.png" alt="logo" class="logo-mobile"></a>
+    <a href="#"><img class="logo-mobile" src="<?php echo $logo; ?>" alt="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>"></a>
     <a>Réserver</a>
     <a>Nos prestations</a>
 </div>
@@ -12,11 +17,11 @@
             var winTop = $(window).scrollTop();
             if (winTop >= 30) {
                 $(".medium-menu").removeClass("transparent");
-                $(".logo").attr("src", "http://hyggelodge.org/wp-content/uploads/2022/02/Hygge-lodge-logo-sans-baseline.png");
+                $(".logo").attr("src", <?php echo '"' . $logo . '"'; ?>);
             } else {
 
                 $(".medium-menu").addClass("transparent");
-                $(".logo").attr("src", "http://hyggelodge.org/wp-content/uploads/2022/02/Hygge-lodge-logo-blanc.png");
+                $(".logo").attr("src", <?php echo '"' . $logo_white . '"'; ?>);
             }
         });
     });
