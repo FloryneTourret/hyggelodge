@@ -26,7 +26,7 @@
 
     <div class="medium-menu transparent top-bar">
         <div class="top-bar-left">
-            <a href="#"><img src="http://localhost:8888/hyggelodge/wp-content/uploads/2022/02/Hygge-lodge-logo-blanc.png" alt="logo" class="logo"></a>
+            <a href="#"><img src="http://hyggelodge.org/wp-content/uploads/2022/02/Hygge-lodge-logo-blanc.png" alt="logo" class="logo"></a>
         </div>
         <div class="top-bar-right ">
             <ul class="menu menu-hover-lines transparent">
