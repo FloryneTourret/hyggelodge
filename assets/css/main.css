@@ -177,7 +177,6 @@ p {
   text-align: center;
   width: 70%;
   font-family: "Antic Didone", serif;
-  font-weight: bold;
   letter-spacing: 0.1rem;
 }
 
@@ -223,12 +222,12 @@ p {
 
 /* Contenu texte */
 .content {
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 
 .content .room_picture,
 .content .trip_picture {
-  border-radius: 40%;
+  border-radius: 50%;
   -webkit-transition: all 0.35s ease;
   transition: all 0.35s ease;
   width: 60%;
@@ -242,8 +241,8 @@ p {
 
 .content .trip_picture {
   position: relative;
-  top: -20%;
-  left: 40%;
+  top: -25%;
+  left: 35%;
   border: 3px solid white;
 }
 

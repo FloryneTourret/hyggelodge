@@ -165,7 +165,6 @@ p {
   text-align: center;
   width: 70%;
   font-family: $title-family;
-  font-weight: bold;
   letter-spacing: 0.1rem;
 }
 
@@ -206,10 +205,10 @@ p {
 
 /* Contenu texte */
 .content {
-  margin-top: 5rem;
+  margin-top: 3rem;
   .room_picture,
   .trip_picture {
-    border-radius: 40%;
+    border-radius: 50%;
     transition: $menu-hover-lines-transition;
     width: 60%;
     &:hover {
@@ -218,8 +217,8 @@ p {
   }
   .trip_picture {
     position: relative;
-    top: -20%;
-    left: 40%;
+    top: -25%;
+    left: 35%;
     border: 3px solid white;
   }
   .button-center {
