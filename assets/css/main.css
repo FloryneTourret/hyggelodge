@@ -213,6 +213,9 @@ h1 {
 
 /* Responsive */
 @media screen and (max-width: 39.9375em) {
+  body {
+    padding-bottom: 3rem;
+  }
   .medium-menu {
     display: none;
   }
