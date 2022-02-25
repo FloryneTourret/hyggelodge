@@ -3,6 +3,10 @@ h1 {
   color: #fff;
 }
 
+p {
+  color: rgba(51, 51, 51, 0.8);
+}
+
 /* Medium menu */
 .medium-menu {
   position: fixed;
@@ -31,7 +35,7 @@ h1 {
 
 .medium-menu .menu-hover-lines li a {
   padding: 0.75rem 0;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(51, 51, 51, 0.5);
   position: relative;
   margin-left: 1rem;
   font-family: "Bodoni Moda", serif;
@@ -41,7 +45,7 @@ h1 {
   -webkit-transition: all 0.35s ease;
   transition: all 0.35s ease;
   background-color: rgba(169, 135, 148, 0.5);
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(51, 51, 51, 0.5);
   border-radius: 0.6rem;
   padding: 0.75rem 1rem;
 }
@@ -77,14 +81,14 @@ h1 {
 
 .medium-menu .menu-hover-lines a:hover,
 .medium-menu .menu-hover-lines li.active > a {
-  color: #000;
+  color: #333;
   -webkit-transition: all 0.35s ease;
   transition: all 0.35s ease;
 }
 
 .medium-menu .menu-hover-lines a.nav-button:hover,
 .medium-menu .menu-hover-lines li.active > a.nav-button {
-  color: #000;
+  color: #333;
   background-color: #a98794;
 }
 
@@ -140,7 +144,7 @@ h1 {
 
 .small-menu a {
   padding: 0.75rem 0;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(51, 51, 51, 0.5);
   position: relative;
   margin-left: 1rem;
 }
@@ -151,7 +155,7 @@ h1 {
 
 .small-menu a:hover,
 .small-menu li.active > a {
-  color: #000;
+  color: #333;
 }
 
 /* Header */
@@ -211,6 +215,50 @@ h1 {
   margin-top: 5rem;
 }
 
+.content .room_picture,
+.content .trip_picture {
+  border-radius: 40%;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  width: 60%;
+}
+
+.content .room_picture:hover,
+.content .trip_picture:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.content .trip_picture {
+  position: relative;
+  top: -20%;
+  left: 40%;
+  border: 3px solid white;
+}
+
+.content .button-center {
+  text-align: center;
+}
+
+.content .button-center .button {
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  background-color: rgba(169, 135, 148, 0.5);
+  color: rgba(51, 51, 51, 0.5);
+  border-radius: 0.6rem;
+  padding: 0.75rem 1rem;
+  font-family: "Antic Didone", serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.content .button-center .button:hover {
+  color: #333;
+  background-color: #a98794;
+}
+
 /* Responsive */
 @media screen and (max-width: 39.9375em) {
   body {
@@ -231,11 +279,15 @@ h1 {
             align-items: center;
     margin: 0;
   }
+  .grid-container {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
   .title {
     margin-top: 15rem;
     font-size: 2rem;
   }
-  .gallery_title {
+  .gallery_card .gallery_title {
     font-size: 1rem;
   }
 }
@@ -248,6 +300,10 @@ h1 {
   }
   .small-menu {
     display: none;
+  }
+  .grid-container {
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -30,11 +30,27 @@ if (!empty($image)) : ?>
     </div>
 
     <div class="content grid-x grid-margin-x grid-margin-y">
-        <div class="cell medium-8 small-12">
+        <div class="cell medium-7 small-12">
             <?php the_field('content'); ?>
         </div>
-        <div class="cell medium-auto small-12">
-            <p>Image à mettre ici</p>
+        <div class="cell medium-auto small-12 grid-y">
+            <div class="cell">
+                <?php
+                $image = get_field('image-room');
+                if (!empty($image)) : ?>
+                    <img class="room_picture" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                <?php endif; ?>
+                <?php
+                $image = get_field('image-trip');
+                if (!empty($image)) : ?>
+                    <img class="trip_picture" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                <?php endif; ?>
+            </div>
+
+            <div class="cell button-center">
+                <a class="button" href="">Réserver</a>
+            </div>
+
         </div>
     </div>
 </div>

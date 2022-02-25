@@ -3,6 +3,13 @@ $logo = get_theme_mod('hyggelodge_logo');
 $logo_white = get_theme_mod('hyggelodge_logo_white');
 ?>
 
+<div>
+    Footer à faire
+    liens
+    contact
+
+</div>
+
 <div class="small-menu">
     <a href="#"><img class="logo-mobile" src="<?php echo $logo; ?>" alt="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>"></a>
     <a>Réserver</a>
