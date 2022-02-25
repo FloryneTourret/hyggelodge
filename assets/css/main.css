@@ -170,7 +170,7 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-bottom: 5rem;
+  padding-bottom: 3rem;
 }
 
 .title {
@@ -212,10 +212,9 @@ p {
 }
 
 .gallery_card .gallery_title {
-  font-family: "Bodoni Moda", serif;
+  font-family: "Antic Didone", serif;
   color: #a98794;
   font-size: 1.1rem;
-  font-weight: bold;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }

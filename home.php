@@ -13,7 +13,7 @@ if (!empty($image)) : ?>
 
 <div class="grid-container">
     <h2 class="gallery_subject"><?php the_field('title'); ?></h2>
-    <div class="grid-x grid-margin-x grid-margin-y">
+    <div class="grid-x grid-margin-x">
         <?php for ($i = 1; $i <= 12; $i++) : ?>
             <div class="gallery_card cell medium-3 small-6">
                 <?php
@@ -29,7 +29,7 @@ if (!empty($image)) : ?>
 
     </div>
 
-    <div class="content grid-x grid-margin-x grid-margin-y">
+    <div class="content grid-x grid-margin-x">
         <div class="cell medium-7 small-12">
             <?php the_field('content'); ?>
         </div>
