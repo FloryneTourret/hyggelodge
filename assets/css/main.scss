@@ -4,6 +4,9 @@ $accent: rgb(195, 174, 124);
 $light: #fff;
 $dark: #000;
 
+$title-family: "Antic Didone", serif;
+$accent-family: "Bodoni Moda", serif;
+
 $menu-hover-lines-transition: all 0.35s ease;
 $menu-hover-lines-border-width: 3px;
 /* General */
@@ -12,10 +15,6 @@ h1 {
 }
 
 /* Medium menu */
-.transparent {
-  background-color: transparent !important;
-  box-shadow: none !important;
-}
 .medium-menu {
   position: fixed;
   top: 0;
@@ -27,7 +26,7 @@ h1 {
   padding: 0 0.75rem;
 
   .logo {
-    height: 5rem;
+    height: 7rem;
   }
   .menu-hover-lines {
     text-align: center;
@@ -41,6 +40,15 @@ h1 {
       color: rgba($dark, 0.5);
       position: relative;
       margin-left: 1rem;
+      font-family: $accent-family;
+    }
+
+    li a.nav-button {
+      transition: $menu-hover-lines-transition;
+      background-color: rgba($primary, 0.5);
+      color: rgba($dark, 0.5);
+      border-radius: 0.6rem;
+      padding: 0.75rem 1rem;
     }
 
     li:first-child a {
@@ -51,8 +59,8 @@ h1 {
       background-color: transparent;
     }
 
-    a:before,
-    a::after {
+    a.nav-link:before,
+    a.nav-link::after {
       height: $menu-hover-lines-border-width;
       position: absolute;
       content: "";
@@ -76,12 +84,35 @@ h1 {
       color: $dark;
       transition: $menu-hover-lines-transition;
     }
+    a.nav-button:hover,
+    li.active > a.nav-button {
+      color: $dark;
+      background-color: $primary;
+    }
 
     a:hover::before,
     .active a::before,
     a:hover::after,
     .active a::after {
       width: 100%;
+    }
+  }
+}
+.transparent {
+  background-color: transparent !important;
+  box-shadow: none !important;
+
+  .menu-hover-lines {
+    li a {
+      color: rgba($light, 0.5);
+    }
+    li a.nav-button {
+      background-color: transparent;
+      color: rgba($light, 0.5);
+    }
+    a:hover,
+    li.active > a {
+      color: $light;
     }
   }
 }
@@ -127,9 +158,41 @@ h1 {
 }
 .title {
   text-align: center;
-  .theme {
-    text-transform: uppercase;
+  width: 70%;
+  font-family: $title-family;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+}
+
+/* Gallerie */
+.gallery_subject {
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  font-family: $title-family;
+  font-size: 2.5rem;
+  color: $secondary;
+}
+.gallery_card {
+  .gallery_image {
+    border-radius: 0.6rem;
+    &:hover {
+      transform: scale(1.1);
+      transition: $menu-hover-lines-transition;
+    }
   }
+  .gallery_title {
+    font-family: $accent-family;
+    color: $primary;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Contenu texte */
+.content {
+  margin-top: 5rem;
 }
 
 /* Responsive */
@@ -142,9 +205,13 @@ h1 {
     display: flex;
   }
   .image_header {
-    height: calc(100vh - 3.5rem);
+    height: calc(100vh - 3rem);
     align-items: center;
     margin: 0;
+  }
+  .title {
+    margin-top: 15rem;
+    font-size: 2rem;
   }
 }
 
