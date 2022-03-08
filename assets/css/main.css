@@ -280,6 +280,17 @@ h1 {
   margin-top: 9rem;
 }
 
+.presta img {
+  border-radius: 0.6rem;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+.presta img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
 /* Responsive */
 @media screen and (max-width: 39.9375em) {
   body {
@@ -313,6 +324,9 @@ h1 {
   }
   .gallery_card .gallery_title {
     font-size: 0.9rem;
+  }
+  .presta {
+    margin-top: 0;
   }
 }
 

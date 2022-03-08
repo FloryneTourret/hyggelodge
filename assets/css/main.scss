@@ -251,6 +251,13 @@ h1 {
 /* Presta */
 .presta {
   margin-top: 9rem;
+  img {
+    border-radius: 0.6rem;
+    transition: $menu-hover-lines-transition;
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
 }
 
 /* Responsive */
@@ -285,6 +292,9 @@ h1 {
     .gallery_title {
       font-size: 0.9rem;
     }
+  }
+  .presta {
+    margin-top: 0;
   }
 }
 
