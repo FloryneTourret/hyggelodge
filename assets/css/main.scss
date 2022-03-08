@@ -6,17 +6,22 @@ $dark: #333;
 
 $title-family: "Antic Didone", serif;
 $accent-family: "Bodoni Moda", serif;
+$basic-family: "Montserrat", sans-serif;
 
 $menu-hover-lines-transition: all 0.35s ease;
 $menu-hover-lines-border-width: 3px;
 $box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
 /* General */
+body {
+  font-family: $basic-family;
+  color: rgba($dark, 0.8);
+}
 h1 {
   color: $light;
 }
-p {
-  color: rgba($dark, 0.8);
+.padding-nav {
+  padding-top: 8rem;
 }
 
 /* Medium menu */
@@ -170,8 +175,10 @@ p {
 
 /* Footer */
 .footer {
+  margin: 0;
   margin-top: 2rem;
   box-shadow: $box-shadow;
+  max-width: none;
   p {
     color: $accent;
   }
@@ -241,6 +248,11 @@ p {
   }
 }
 
+/* Presta */
+.presta {
+  margin-top: 9rem;
+}
+
 /* Responsive */
 
 @media screen and (max-width: 39.9375em) {
@@ -261,6 +273,9 @@ p {
   .grid-container {
     padding-right: 1.5rem;
     padding-left: 1.5rem;
+  }
+  .padding-nav {
+    padding-top: 1rem;
   }
   .title {
     margin-top: 15rem;

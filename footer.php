@@ -35,8 +35,8 @@ $logo_white = get_theme_mod('hyggelodge_logo_white');
 
 <div class="small-menu">
     <a href="#"><img class="logo-mobile" src="<?php echo $logo; ?>" alt="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>"></a>
-    <a>Réserver</a>
-    <a>Nos prestations</a>
+    <a href="#">Réserver</a>
+    <a href="<?php echo get_permalink(get_page_by_path('prestations')); ?>">Nos prestations</a>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -46,12 +46,12 @@ $logo_white = get_theme_mod('hyggelodge_logo_white');
         $(window).scroll(function() {
             var winTop = $(window).scrollTop();
             if (winTop >= 30) {
-                $(".medium-menu").removeClass("transparent");
-                $(".logo").attr("src", <?php echo '"' . $logo . '"'; ?>);
+                $(".medium-menu-home").removeClass("transparent");
+                $(".logo-home").attr("src", <?php echo '"' . $logo . '"'; ?>);
             } else {
 
-                $(".medium-menu").addClass("transparent");
-                $(".logo").attr("src", <?php echo '"' . $logo_white . '"'; ?>);
+                $(".medium-menu-home").addClass("transparent");
+                $(".logo-home").attr("src", <?php echo '"' . $logo_white . '"'; ?>);
             }
         });
     });

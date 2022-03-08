@@ -16,6 +16,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
     <title><?php echo get_bloginfo('name'); ?></title>
 
 
@@ -23,23 +27,3 @@
 </head>
 
 <body>
-
-    <?php
-    $logo = get_theme_mod('hyggelodge_logo');
-    $logo_white = get_theme_mod('hyggelodge_logo_white');
-    ?>
-    <div class="medium-menu transparent top-bar">
-        <div class="top-bar-left">
-            <a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
-                <img class="logo" src="<?php echo $logo_white; ?>" alt="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>">
-            </a>
-        </div>
-        <div class="top-bar-right ">
-            <ul class="menu menu-hover-lines transparent">
-                <li><a href="#" class="nav-link">Nos prestations</a></li>
-                <li><a href="#" class="nav-button">Réserver</a></li>
-            </ul>
-
-        </div>
-
-    </div>

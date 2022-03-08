@@ -1,10 +1,15 @@
 /* General */
+body {
+  font-family: "Montserrat", sans-serif;
+  color: rgba(51, 51, 51, 0.8);
+}
+
 h1 {
   color: #fff;
 }
 
-p {
-  color: rgba(51, 51, 51, 0.8);
+.padding-nav {
+  padding-top: 8rem;
 }
 
 /* Medium menu */
@@ -182,9 +187,11 @@ p {
 
 /* Footer */
 .footer {
+  margin: 0;
   margin-top: 2rem;
   -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
           box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  max-width: none;
 }
 
 .footer p {
@@ -268,6 +275,11 @@ p {
   background-color: #a98794;
 }
 
+/* Presta */
+.presta {
+  margin-top: 9rem;
+}
+
 /* Responsive */
 @media screen and (max-width: 39.9375em) {
   body {
@@ -291,6 +303,9 @@ p {
   .grid-container {
     padding-right: 1.5rem;
     padding-left: 1.5rem;
+  }
+  .padding-nav {
+    padding-top: 1rem;
   }
   .title {
     margin-top: 15rem;
