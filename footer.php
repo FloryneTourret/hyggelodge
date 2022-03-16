@@ -34,8 +34,8 @@ $logo_white = get_theme_mod('hyggelodge_logo_white');
 
 
 <div class="small-menu">
-    <a href="#"><img class="logo-mobile" src="<?php echo $logo; ?>" alt="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>"></a>
-    <a href="#">Réserver</a>
+    <a href="<?php echo esc_url(home_url('/')); ?>"><img class="logo-mobile" src="<?php echo $logo; ?>" alt="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>"></a>
+    <a href="<?php echo get_permalink(get_page_by_path('reserver')); ?>">Réserver</a>
     <a href="<?php echo get_permalink(get_page_by_path('prestations')); ?>">Nos prestations</a>
 </div>
 
