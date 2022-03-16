@@ -39,7 +39,7 @@ if (!empty($image)) : ?>
                 <?php
                 $image = get_field('image-' . $i);
                 if (!empty($image)) : ?>
-                    <img class="gallery_image" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                    <a href="<?php the_field('link-' . $i); ?>"><img class="gallery_image" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" /></a>
                 <?php endif; ?>
                 <p class="gallery_title"><?php the_field('title-' . $i); ?></p>
             </div>
