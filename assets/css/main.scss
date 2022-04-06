@@ -179,9 +179,25 @@ h1 {
   margin-top: 2rem;
   box-shadow: $box-shadow;
   max-width: none;
-  p {
-    color: $accent;
+  .content{
+    margin-left: 5rem;
+    margin-right: 5rem; 
+     p {
+      color: $accent;
+    }
+    ul{
+      list-style-type: none;
+      li{
+        a{
+          color: $accent;
+          &:hover{
+            color: $secondary;
+          }
+        }
+      }
+    }
   }
+
 }
 
 /* Galerie */

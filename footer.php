@@ -4,12 +4,14 @@ $logo_white = get_theme_mod('hyggelodge_logo_white');
 ?>
 
 <div class="grid-container footer">
-    <div class="grid-x grid-margin-x grid-margin-y">
-        <div class="cell medium-4 small-12">
-            <p>Liens pages</p>
-        </div>
-
-        <div class="cell medium-4 small-12">
+    <div class="grid-x grid-margin-x grid-margin-y content">        
+        <div class="cell medium-4 small-12"> 
+            <p>
+                Tél: +33 6 70 16 55 15
+                <br>
+                hyggelodge@outlook.com
+            </p>
+            <br>
             <p>
                 458, route de la Gare
                 <br>
@@ -19,15 +21,29 @@ $logo_white = get_theme_mod('hyggelodge_logo_white');
                 <br>
                 France
             </p>
-            <p>
-                Tél: +33 6 70 16 55 15
-                <br>
-                hyggelodge@outlook.com
-            </p>
+            <br>
+            <p>© Hygge Lodge Annecy - 2022</p>
         </div>
-
         <div class="cell medium-4 small-12">
-            <p>©</p>
+            <ul>
+                <li><a href="<?php echo esc_url(home_url('/')); ?>">Accueil</a></li>
+                <li><a href="<?php echo esc_url(home_url('/reserver/')); ?>">Réserver</a></li>
+                <li><a href="<?php echo esc_url(home_url('/prestations/')); ?>">Nos prestations</a></li>
+                <ul>
+                    <li><a href="<?php echo esc_url(home_url('/hebergements/')); ?>">La maison d’hôtes</a></li>
+                    <li><a href="<?php echo esc_url(home_url('/table-dhote/')); ?>">Côté papilles</a></li>
+                    <li><a href="<?php echo esc_url(home_url('/sejours-et-evenements/')); ?>">Séjours & évenements</a></li>
+                    <li><a href="<?php echo esc_url(home_url('/activites/')); ?>">Quoi faire au Hygge Lodge Annecy</a></li>
+                    <li><a href="<?php echo esc_url(home_url('/activites-exterieures/')); ?>">Et aux alentours ?</a></li>
+                </ul>
+            </ul>
+        </div>
+        <div class="cell medium-4 small-12">
+            <ul>
+                <li><a href="#">Politique de confidentialité</a></li>
+                <li><a href="#">Conditions génerales de vente</a></li>
+                <li><a href="#">Mentions légales</a></li>
+            </ul>
         </div>
     </div>
 </div>
@@ -35,8 +51,8 @@ $logo_white = get_theme_mod('hyggelodge_logo_white');
 
 <div class="small-menu">
     <a href="<?php echo esc_url(home_url('/')); ?>"><img class="logo-mobile" src="<?php echo $logo; ?>" alt="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>"></a>
-    <a href="<?php echo get_permalink(get_page_by_path('reserver')); ?>">Réserver</a>
-    <a href="<?php echo get_permalink(get_page_by_path('prestations')); ?>">Nos prestations</a>
+    <a href="<?php echo esc_url(home_url('/reserver/')); ?>">Réserver</a>
+    <a href="<?php echo esc_url(home_url('/prestations/')); ?>">Nos prestations</a>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>

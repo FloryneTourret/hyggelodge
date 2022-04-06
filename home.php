@@ -14,8 +14,8 @@ $logo_white = get_theme_mod('hyggelodge_logo_white');
     </div>
     <div class="top-bar-right ">
         <ul class="menu menu-hover-lines transparent">
-            <li><a href="<?php echo get_permalink(get_page_by_path('prestations')); ?>" class="nav-link">Nos prestations</a></li>
-            <li><a href="<?php echo get_permalink(get_page_by_path('reserver')); ?>" class="nav-button">Réserver</a></li>
+            <li><a href="<?php echo esc_url(home_url('/prestations/')); ?>" class="nav-link">Nos prestations</a></li>
+            <li><a href="<?php echo esc_url(home_url('/reserver/')); ?>" class="nav-button">Réserver</a></li>
         </ul>
 
     </div>
@@ -69,7 +69,7 @@ if (!empty($image)) : ?>
         </div>
 
         <div class="cell button-center">
-            <a class="button" href="<?php echo get_permalink(get_page_by_path('reserver')); ?>">Réserver</a>
+            <a class="button" href="<?php echo echo esc_url(home_url('/reserver/')); ?>">Réserver</a>
         </div>
     </div>
 </div>
