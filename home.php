@@ -69,7 +69,7 @@ if (!empty($image)) : ?>
         </div>
 
         <div class="cell button-center">
-            <a class="button" href="<?php echo echo esc_url(home_url('/reserver/')); ?>">Réserver</a>
+            <a class="button" href="<?php echo esc_url(home_url('/reserver/')); ?>">Réserver</a>
         </div>
     </div>
 </div>
