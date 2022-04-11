@@ -211,16 +211,15 @@ h1 {
           &:hover {
             color: $secondary;
           }
-
-          ion-icon {
-            color: $accent;
-            font-size: 2rem;
-          }
         }
       }
     }
   }
 
+  ion-icon {
+    color: $accent;
+    font-size: 2rem;
+  }
 }
 
 /* Galerie */

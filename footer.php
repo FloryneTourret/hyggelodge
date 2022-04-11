@@ -45,8 +45,8 @@ $logo_white = get_theme_mod('hyggelodge_logo_white');
                 <li><a href="<?php echo esc_url(home_url('/mentions-legales/')); ?>">Mentions légales</a></li>
             </ul>
             <ul>
-                <li><a href=""><ion-icon name="logo-instagram"></ion-icon></a></li>
-                <li><a href=""><ion-icon name="logo-facebook"></ion-icon></a></li>
+                <li><a href=""><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href=""><ion-icon name="logo-facebook"></ion-icon></a></li>
             </ul>
             
             
