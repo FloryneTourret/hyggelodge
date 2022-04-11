@@ -44,6 +44,8 @@ $logo_white = get_theme_mod('hyggelodge_logo_white');
                 <li><a href="<?php echo esc_url(home_url('/cgv/')); ?>">Conditions génerales de vente</a></li>
                 <li><a href="<?php echo esc_url(home_url('/mentions-legales/')); ?>">Mentions légales</a></li>
             </ul>
+            <ion-icon name="logo-instagram"></ion-icon>
+            <ion-icon name="logo-facebook"></ion-icon>
         </div>
     </div>
 </div>
@@ -57,6 +59,8 @@ $logo_white = get_theme_mod('hyggelodge_logo_white');
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/js/foundation.min.js" crossorigin="anonymous"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 <script>
     $(function() {
         $(window).scroll(function() {
