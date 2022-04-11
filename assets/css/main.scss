@@ -4,9 +4,12 @@ $accent: rgb(195, 174, 124);
 $light: #fff;
 $dark: #333;
 
-$title-family: "Antic Didone", serif;
-$accent-family: "Bodoni Moda", serif;
-$basic-family: "Montserrat", sans-serif;
+$title-family: "Antic Didone",
+serif;
+$accent-family: "Bodoni Moda",
+serif;
+$basic-family: "Montserrat",
+sans-serif;
 
 $menu-hover-lines-transition: all 0.35s ease;
 $menu-hover-lines-border-width: 3px;
@@ -17,9 +20,11 @@ body {
   font-family: $basic-family;
   color: rgba($dark, 0.8);
 }
+
 h1 {
   color: $light;
 }
+
 .padding-nav {
   padding-top: 8rem;
 }
@@ -38,6 +43,7 @@ h1 {
   .logo {
     height: 7rem;
   }
+
   .menu-hover-lines {
     text-align: center;
     text-transform: uppercase;
@@ -65,7 +71,7 @@ h1 {
       margin-left: 0;
     }
 
-    li.active > a {
+    li.active>a {
       background-color: transparent;
     }
 
@@ -90,12 +96,13 @@ h1 {
     }
 
     a:hover,
-    li.active > a {
+    li.active>a {
       color: $dark;
       transition: $menu-hover-lines-transition;
     }
+
     a.nav-button:hover,
-    li.active > a.nav-button {
+    li.active>a.nav-button {
       color: $dark;
       background-color: $primary;
     }
@@ -108,6 +115,7 @@ h1 {
     }
   }
 }
+
 .transparent {
   background-color: transparent !important;
   box-shadow: none !important;
@@ -116,12 +124,14 @@ h1 {
     li a {
       color: rgba($light, 0.5);
     }
+
     li a.nav-button {
       background-color: transparent;
       color: rgba($light, 0.5);
     }
+
     a:hover,
-    li.active > a {
+    li.active>a {
       color: $light;
     }
   }
@@ -148,12 +158,14 @@ h1 {
     color: rgba($dark, 0.5);
     position: relative;
     margin-left: 1rem;
+
     img {
       max-height: 3rem;
     }
   }
+
   a:hover,
-  li.active > a {
+  li.active>a {
     color: $dark;
   }
 }
@@ -166,6 +178,7 @@ h1 {
   justify-content: center;
   padding-bottom: 3rem;
 }
+
 .title {
   text-align: center;
   width: 70%;
@@ -179,19 +192,29 @@ h1 {
   margin-top: 2rem;
   box-shadow: $box-shadow;
   max-width: none;
-  .content{
+
+  .content {
     margin-left: 5rem;
-    margin-right: 5rem; 
-     p {
+    margin-right: 5rem;
+
+    p {
       color: $accent;
     }
-    ul{
+
+    ul {
       list-style-type: none;
-      li{
-        a{
+
+      li {
+        a {
           color: $accent;
-          &:hover{
+
+          &:hover {
             color: $secondary;
+          }
+
+          ion-icon {
+            color: $accent;
+            font-size: 2rem;
           }
         }
       }
@@ -208,14 +231,17 @@ h1 {
   font-size: 2.1rem;
   color: $secondary;
 }
+
 .gallery_card {
   .gallery_image {
     border-radius: 0.6rem;
     transition: $menu-hover-lines-transition;
+
     &:hover {
       transform: scale(1.1);
     }
   }
+
   .gallery_title {
     font-family: $title-family;
     color: $primary;
@@ -228,23 +254,28 @@ h1 {
 /* Contenu texte */
 .content {
   margin-top: 3rem;
+
   .room_picture,
   .trip_picture {
     border-radius: 50%;
     transition: $menu-hover-lines-transition;
     width: 60%;
+
     &:hover {
       transform: scale(1.1);
     }
   }
+
   .trip_picture {
     position: relative;
     top: -25%;
     left: 35%;
     border: 3px solid white;
   }
+
   .button-center {
     text-align: center;
+
     .button {
       transition: $menu-hover-lines-transition;
       background-color: rgba($primary, 0.5);
@@ -256,6 +287,7 @@ h1 {
       font-size: 1.2rem;
       text-transform: uppercase;
       letter-spacing: 1px;
+
       &:hover {
         color: $dark;
         background-color: $primary;
@@ -267,9 +299,11 @@ h1 {
 /* Presta */
 .presta {
   margin-top: 9rem;
+
   img {
     border-radius: 0.6rem;
     transition: $menu-hover-lines-transition;
+
     &:hover {
       transform: scale(1.05);
     }
@@ -282,33 +316,41 @@ h1 {
   body {
     padding-bottom: 3rem;
   }
+
   .medium-menu {
     display: none;
   }
+
   .small-menu {
     display: flex;
   }
+
   .image_header {
     height: calc(100vh - 3rem);
     align-items: center;
     margin: 0;
   }
+
   .grid-container {
     padding-right: 1.5rem;
     padding-left: 1.5rem;
   }
+
   .padding-nav {
     padding-top: 1rem;
   }
+
   .title {
     margin-top: 15rem;
     font-size: 2rem;
   }
+
   .gallery_card {
     .gallery_title {
       font-size: 0.9rem;
     }
   }
+
   .presta {
     margin-top: 0;
   }
@@ -318,9 +360,11 @@ h1 {
   .medium-menu {
     display: flex;
   }
+
   .small-menu {
     display: none;
   }
+
   .grid-container {
     padding-right: 2.5rem;
     padding-left: 2.5rem;

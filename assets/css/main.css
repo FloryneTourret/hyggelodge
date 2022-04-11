@@ -215,6 +215,11 @@ h1 {
   color: #59729c;
 }
 
+.footer .content ul li a ion-icon {
+  color: #c3ae7c;
+  font-size: 2rem;
+}
+
 /* Galerie */
 .gallery_subject {
   margin-top: 1.5rem;
