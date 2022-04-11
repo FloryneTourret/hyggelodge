@@ -40,9 +40,9 @@ $logo_white = get_theme_mod('hyggelodge_logo_white');
         </div>
         <div class="cell medium-4 small-12">
             <ul>
-                <li><a href="#">Politique de confidentialité</a></li>
-                <li><a href="#">Conditions génerales de vente</a></li>
-                <li><a href="#">Mentions légales</a></li>
+                <li><a href="<?php echo esc_url(home_url('/politique-de-confidentialite/')); ?>">Politique de confidentialité</a></li>
+                <li><a href="<?php echo esc_url(home_url('/cgv/')); ?>">Conditions génerales de vente</a></li>
+                <li><a href="<?php echo esc_url(home_url('/mentions-legales/')); ?>">Mentions légales</a></li>
             </ul>
         </div>
     </div>
