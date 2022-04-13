@@ -350,6 +350,9 @@ h1 {
   .presta {
     margin-top: 0;
   }
+  .footer .content {
+    margin: 0;
+  }
 }
 
 @media screen and (min-width: 40em) {
