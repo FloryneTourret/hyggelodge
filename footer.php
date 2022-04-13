@@ -46,8 +46,8 @@ $logo_white = get_theme_mod('hyggelodge_logo_white');
             </ul>
             <ul>
                 <li>
-                    <a href="https://www.instagram.com/hyggelodgeannecy/"><ion-icon name="logo-instagram"></ion-icon></a>
-                    <a href="https://www.facebook.com/hyggelodge"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="https://www.instagram.com/hyggelodgeannecy/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="https://www.facebook.com/hyggelodge" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
             </li>
             </ul>
             
